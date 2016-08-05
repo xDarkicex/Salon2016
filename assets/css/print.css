@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+   background: white;
+   font-size: 12pt;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   }
+h1 {
+	display: inline;
+	}
+img {
+	display: none;
+	}
+#linkList {
+   display: none;
+   }
+#container, #supportingText {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   }
+div#supportingText {
+   padding-top: 1em;
+   }
+div#supportingText table {
+   padding-top: 1em;
+   border: thin;
+   }
+div#footer {
+	display: none;
+	}
+a:link, a:visited {
+   color: #520;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+   }
+#supportingText a:link:after, #supportingText a:visited:after {
+   container: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+#supportingText a[href^="/"]:after {
+   container: " (http://www.neodolcesalon.com" attr(href) ") ";
+   }
